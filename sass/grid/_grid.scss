@@ -1,0 +1,62 @@
+*{box-sizing: border-box;}
+$colone: 12;
+$goutiere: 20px;
+%clearfix{
+    &::before{
+        content: "";
+        display: table;
+    }
+    &::after{
+        clear: both;
+    }
+    &{
+        zoom: 1;
+    }
+
+}
+
+.container{
+    position: relative;
+    max-width:1140px;
+    margin: 0 auto;
+}
+
+.row{
+    position: relative;
+    margin-right: $goutiere -0.5;
+    margin-left:  $goutiere -0.5;
+    @extend %clearfix;
+}
+
+
+@for $i from 1 through $colone{
+    .col-#{$i}{
+        float: left;
+        position: relative;
+        min-height: 1px;
+        width: $i / $colone * 100% ;
+        padding:0 $goutiere 0.5;
+    }
+}
+@media only screen and (min-width:640px){
+    @for $i from 1 through $colone{
+        .col-md-#{$i}{
+            float: left;
+            position: relative;
+            min-height: 1px;
+            width:  $i / $colone * 100% ;
+            padding:0 $goutiere  0.5;
+        }
+    }
+}
+@media only screen and (min-width:1024px){
+    @for $i from 1 through $colone{
+        .col-lg-#{$i}{
+            float: left;
+            position: relative;
+            min-height: 1px;
+            width:  $i / $colone * 100% ;
+            padding:0 $goutiere  0.5;
+        }
+    }
+}

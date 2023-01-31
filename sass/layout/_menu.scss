@@ -1,0 +1,90 @@
+body{
+    margin: 0%;
+    padding: 0%;
+    overflow-x: hidden;
+}
+.barBox {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
+    padding: 2%;
+
+    z-index: 10;
+    background-color: aliceblue;
+}
+
+.titleBox{
+    flex: 1 ;
+    p{
+        margin: 0;
+        margin-right: 10%;
+        text-align: end;
+    }
+}
+.menu {
+    display: none ;
+}
+.menu.open {
+    position: relative;
+    display: block;      
+    background-color: black;
+    width: 50%;
+    height: 100vh;
+    z-index: 3;
+    ul{
+        margin: 0%;
+        z-index: 5;
+        padding-top: 20%;
+        padding-left: 5%;
+    }
+    ul li{
+            list-style: none;
+            color: white;
+            padding: 10%;
+            a{
+                padding: 0;
+                color: white;
+                text-decoration: none;
+            }
+        }
+}
+.menu.open::after{
+    content: "";
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    opacity: 0.5;
+    position: absolute;
+    z-index: 1;
+    top: 0%;
+    right: -100%;
+
+}
+.btn01 {
+    width: 20px;
+    height: 20px;
+    background-image: url("../../image/bars-solid.svg");
+}
+
+@media only screen and ( min-width: 750px){
+
+.menu.open{
+        width: 30%;
+    ul li{
+        padding: 5%;
+    }
+}
+    .menu.open::after{
+        content: "";
+        width: 250%;
+        height: 100vh;
+        background-color: black;
+        opacity: 0.5;
+        position: absolute;
+        z-index: 1;
+        top: 0%;
+        right: -250%;
+        overflow-x: hidden;
+    }
+}
