@@ -2,6 +2,7 @@ body{
     margin: 0%;
     padding: 0%;
     overflow-x: hidden;
+    position: relative;
 }
 .barBox {
     display: flex;
@@ -26,7 +27,7 @@ body{
     display: none ;
 }
 .menu.open {
-    position: relative;
+    position: absolute;
     display: block;      
     background-color: black;
     width: 50%;

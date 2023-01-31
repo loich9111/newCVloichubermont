@@ -1,62 +1,58 @@
-*{box-sizing: border-box;}
-$colone: 12;
-$goutiere: 20px;
-%clearfix{
-    &::before{
+
+$cols: 12 !default;
+$gutter-width: 1.2rem !default;
+$max-width: 1180px !default;
+.row {
+    margin-left: 0;
+    margin-right: 0;
+    .row {
+        margin-left: -$gutter-width / 2;
+        margin-right: -$gutter-width / 2;
+    }
+    &:after {
         content: "";
         display: table;
-    }
-    &::after{
         clear: both;
     }
-    &{
-        zoom: 1;
-    }
-
+    
 }
-
-.container{
-    position: relative;
-    max-width:1140px;
-    margin: 0 auto;
-}
-
-.row{
-    position: relative;
-    margin-right: $goutiere -0.5;
-    margin-left:  $goutiere -0.5;
-    @extend %clearfix;
-}
-
-
-@for $i from 1 through $colone{
+@for $i from 1 through $cols{
     .col-#{$i}{
         float: left;
-        position: relative;
-        min-height: 1px;
-        width: $i / $colone * 100% ;
-        padding:0 $goutiere 0.5;
+        box-sizing: border-box;
+        padding: 0 $gutter-width / 2;
+        margin-left: auto;
+        left: auto;
+        right: auto;
+        $perc: unquote((100 / ($cols / $i)) + "%");
+        width: $perc;
     }
 }
-@media only screen and (min-width:640px){
-    @for $i from 1 through $colone{
+@media only screen and (min-width:750px){
+    @for $i from 1 through $cols{
         .col-md-#{$i}{
             float: left;
-            position: relative;
-            min-height: 1px;
-            width:  $i / $colone * 100% ;
-            padding:0 $goutiere  0.5;
+            box-sizing: border-box;
+            padding: 0 $gutter-width / 2;
+            margin-left: auto;
+            left: auto;
+            right: auto;
+            $perc: unquote((100 / ($cols / $i)) + "%");
+            width: $perc;
         }
     }
 }
 @media only screen and (min-width:1024px){
-    @for $i from 1 through $colone{
+    @for $i from 1 through $cols{
         .col-lg-#{$i}{
             float: left;
-            position: relative;
-            min-height: 1px;
-            width:  $i / $colone * 100% ;
-            padding:0 $goutiere  0.5;
+            box-sizing: border-box;
+            padding: 0 $gutter-width / 2;
+            margin-left: auto;
+            left: auto;
+            right: auto;
+            $perc: unquote((100 / ($cols / $i)) + "%");
+            width: $perc;
         }
     }
 }

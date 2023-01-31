@@ -1,302 +1,362 @@
-* {
-  box-sizing: border-box;
+.row {
+  margin-left: 0;
+  margin-right: 0;
 }
-
-.row::before {
+.row .row {
+  margin-left: -0.6rem;
+  margin-right: -0.6rem;
+}
+.row:after {
   content: "";
   display: table;
-}
-.row::after {
   clear: both;
-}
-.row {
-  zoom: 1;
-}
-
-.container {
-  position: relative;
-  max-width: 1140px;
-  margin: 0 auto;
-}
-
-.row {
-  position: relative;
-  margin-right: 20px -0.5;
-  margin-left: 20px -0.5;
 }
 
 .col-1 {
   float: left;
-  position: relative;
-  min-height: 1px;
+  box-sizing: border-box;
+  padding: 0 0.6rem;
+  margin-left: auto;
+  left: auto;
+  right: auto;
   width: 8.3333333333%;
-  padding: 0 20px 0.5;
 }
 
 .col-2 {
   float: left;
-  position: relative;
-  min-height: 1px;
+  box-sizing: border-box;
+  padding: 0 0.6rem;
+  margin-left: auto;
+  left: auto;
+  right: auto;
   width: 16.6666666667%;
-  padding: 0 20px 0.5;
 }
 
 .col-3 {
   float: left;
-  position: relative;
-  min-height: 1px;
+  box-sizing: border-box;
+  padding: 0 0.6rem;
+  margin-left: auto;
+  left: auto;
+  right: auto;
   width: 25%;
-  padding: 0 20px 0.5;
 }
 
 .col-4 {
   float: left;
-  position: relative;
-  min-height: 1px;
+  box-sizing: border-box;
+  padding: 0 0.6rem;
+  margin-left: auto;
+  left: auto;
+  right: auto;
   width: 33.3333333333%;
-  padding: 0 20px 0.5;
 }
 
 .col-5 {
   float: left;
-  position: relative;
-  min-height: 1px;
+  box-sizing: border-box;
+  padding: 0 0.6rem;
+  margin-left: auto;
+  left: auto;
+  right: auto;
   width: 41.6666666667%;
-  padding: 0 20px 0.5;
 }
 
 .col-6 {
   float: left;
-  position: relative;
-  min-height: 1px;
+  box-sizing: border-box;
+  padding: 0 0.6rem;
+  margin-left: auto;
+  left: auto;
+  right: auto;
   width: 50%;
-  padding: 0 20px 0.5;
 }
 
 .col-7 {
   float: left;
-  position: relative;
-  min-height: 1px;
+  box-sizing: border-box;
+  padding: 0 0.6rem;
+  margin-left: auto;
+  left: auto;
+  right: auto;
   width: 58.3333333333%;
-  padding: 0 20px 0.5;
 }
 
 .col-8 {
   float: left;
-  position: relative;
-  min-height: 1px;
+  box-sizing: border-box;
+  padding: 0 0.6rem;
+  margin-left: auto;
+  left: auto;
+  right: auto;
   width: 66.6666666667%;
-  padding: 0 20px 0.5;
 }
 
 .col-9 {
   float: left;
-  position: relative;
-  min-height: 1px;
+  box-sizing: border-box;
+  padding: 0 0.6rem;
+  margin-left: auto;
+  left: auto;
+  right: auto;
   width: 75%;
-  padding: 0 20px 0.5;
 }
 
 .col-10 {
   float: left;
-  position: relative;
-  min-height: 1px;
+  box-sizing: border-box;
+  padding: 0 0.6rem;
+  margin-left: auto;
+  left: auto;
+  right: auto;
   width: 83.3333333333%;
-  padding: 0 20px 0.5;
 }
 
 .col-11 {
   float: left;
-  position: relative;
-  min-height: 1px;
+  box-sizing: border-box;
+  padding: 0 0.6rem;
+  margin-left: auto;
+  left: auto;
+  right: auto;
   width: 91.6666666667%;
-  padding: 0 20px 0.5;
 }
 
 .col-12 {
   float: left;
-  position: relative;
-  min-height: 1px;
+  box-sizing: border-box;
+  padding: 0 0.6rem;
+  margin-left: auto;
+  left: auto;
+  right: auto;
   width: 100%;
-  padding: 0 20px 0.5;
 }
 
-@media only screen and (min-width: 640px) {
+@media only screen and (min-width: 750px) {
   .col-md-1 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 8.3333333333%;
-    padding: 0 20px 0.5;
   }
   .col-md-2 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 16.6666666667%;
-    padding: 0 20px 0.5;
   }
   .col-md-3 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 25%;
-    padding: 0 20px 0.5;
   }
   .col-md-4 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 33.3333333333%;
-    padding: 0 20px 0.5;
   }
   .col-md-5 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 41.6666666667%;
-    padding: 0 20px 0.5;
   }
   .col-md-6 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 50%;
-    padding: 0 20px 0.5;
   }
   .col-md-7 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 58.3333333333%;
-    padding: 0 20px 0.5;
   }
   .col-md-8 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 66.6666666667%;
-    padding: 0 20px 0.5;
   }
   .col-md-9 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 75%;
-    padding: 0 20px 0.5;
   }
   .col-md-10 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 83.3333333333%;
-    padding: 0 20px 0.5;
   }
   .col-md-11 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 91.6666666667%;
-    padding: 0 20px 0.5;
   }
   .col-md-12 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 100%;
-    padding: 0 20px 0.5;
   }
 }
 @media only screen and (min-width: 1024px) {
   .col-lg-1 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 8.3333333333%;
-    padding: 0 20px 0.5;
   }
   .col-lg-2 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 16.6666666667%;
-    padding: 0 20px 0.5;
   }
   .col-lg-3 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 25%;
-    padding: 0 20px 0.5;
   }
   .col-lg-4 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 33.3333333333%;
-    padding: 0 20px 0.5;
   }
   .col-lg-5 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 41.6666666667%;
-    padding: 0 20px 0.5;
   }
   .col-lg-6 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 50%;
-    padding: 0 20px 0.5;
   }
   .col-lg-7 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 58.3333333333%;
-    padding: 0 20px 0.5;
   }
   .col-lg-8 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 66.6666666667%;
-    padding: 0 20px 0.5;
   }
   .col-lg-9 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 75%;
-    padding: 0 20px 0.5;
   }
   .col-lg-10 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 83.3333333333%;
-    padding: 0 20px 0.5;
   }
   .col-lg-11 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 91.6666666667%;
-    padding: 0 20px 0.5;
   }
   .col-lg-12 {
     float: left;
-    position: relative;
-    min-height: 1px;
+    box-sizing: border-box;
+    padding: 0 0.6rem;
+    margin-left: auto;
+    left: auto;
+    right: auto;
     width: 100%;
-    padding: 0 20px 0.5;
   }
 }
 body {
   margin: 0%;
   padding: 0%;
   overflow-x: hidden;
+  position: relative;
 }
 
 .barBox {
@@ -323,7 +383,7 @@ body {
 }
 
 .menu.open {
-  position: relative;
+  position: absolute;
   display: block;
   background-color: black;
   width: 50%;
@@ -384,6 +444,28 @@ body {
     right: -250%;
     overflow-x: hidden;
   }
+}
+body {
+  background-color: white;
+}
+
+main {
+  position: relative;
+  width: 100%;
+  height: auto;
+  z-index: 1;
+  top: 5%;
+}
+
+footer {
+  width: 100%;
+  height: auto;
+  position: relative;
+  background: black;
+  color: white;
+  left: 0;
+  bottom: 0;
+  z-index: 1;
 }
 
 /*# sourceMappingURL=screen.css.map */
