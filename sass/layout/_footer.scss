@@ -1,10 +1,15 @@
-footer{
-    width: 100%;
-    height: auto;
+.pageContainerFooter{
     position: relative;
+    min-height: 100vh;
+}
+footer{
+    position: absolute;
     background: black;
     color:white;
+    width: 100%;
     left: 0;
     bottom: 0;
     z-index: 1;
+    padding: 2.5rem;  
+    height:auto; 
 }

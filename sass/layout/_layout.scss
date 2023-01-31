@@ -1,8 +1,12 @@
 body{
     background-color: white;
 }
-main{
+.pageContainerMain{
     position: relative;
+    padding-bottom: 2.5rem;
+}
+main{
+    position: absolute;
     width: 100%;
     height: auto;
     z-index: 1;
