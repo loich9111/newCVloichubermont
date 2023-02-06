@@ -5,6 +5,9 @@ body{
     position: relative;
     background-color: map-get($color, mainColor );
 }
+.barmenuIcon{
+    filter : invert(50%);
+}
 .pageContainerHeader{
     position: relative;
 

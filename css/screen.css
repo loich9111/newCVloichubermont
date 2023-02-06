@@ -360,6 +360,10 @@ body {
   background-color: #ececec;
 }
 
+.barmenuIcon {
+  filter: invert(50%);
+}
+
 .pageContainerHeader {
   position: relative;
 }
