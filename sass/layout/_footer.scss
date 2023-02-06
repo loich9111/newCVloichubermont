@@ -4,12 +4,47 @@
 }
 footer{
     position: absolute;
-    background: black;
+    background: map-get($color , footer );
     color:white;
     width: 100%;
     left: 0;
     bottom: 0;
     z-index: 1;
-    padding: 2.5rem;  
+    padding: 0;  
     height:auto; 
+}
+.iitleFooter{
+    text-align: center;
+}
+.addressFooter{
+    padding: 5%;
+    padding-top:1% ;
+    text-align: center;
+}
+.contactFooter{
+    padding: 5%;
+    padding-top:1% ;
+    text-align: center;
+}
+@media screen and (min-width:750px){
+    .addressFooter{
+        padding: 5%;
+        padding-top:1% ;
+        text-align: center;
+    }
+    .contactFooter{
+        padding: 5%;
+        padding-top:1% ;
+        text-align: center;
+    }
+    footer{
+        position: absolute;
+
+        color:white;
+        width: 100%;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+        height:auto; 
+    }
 }
